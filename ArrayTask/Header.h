@@ -103,17 +103,17 @@ public:
 		return true;
 	}
 
-	Array<T>& operator+(int c) const {
-		Array *temp = new Array(this->size);
-		for (int i = 0; i < this->size; i++) {
-			(*temp)[i] = (*this)[i] + c;
-		}
-		return *temp;
-	}
+	//Array<T>& operator+(T c) const {
+	//	Array *temp = new Array(this->size);
+	//	for (int i = 0; i < this->size; i++) {
+	//		(*temp)[i] = (*this)[i] + c;
+	//	}
+	//	return *temp;
+	//}
 
-	Array<T>& operator-(int c) const {
-		return (*this) + -c;
-	}
+	//Array<T>& operator-(T c) const {
+	//	return (*this) + -c;
+	//}
 
 	Array<T>& operator+(const Array<T> &arr) const {
 		Array *temp = new Array(this->size + arr.size);
